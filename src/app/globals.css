@@ -3,5 +3,36 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background text-neutral-500;
+  @apply bg-black-100 text-neutral-500;
+}
+
+.recharts-label {
+  @apply translate-x-[-50px] translate-y-[-8px] fill-neutral-400 text-xs;
+}
+
+.recharts-wrapper {
+  @apply !h-full !w-full;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3a4149 #16191d;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 12px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #16191d;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #3a4149;
+  border-radius: 1rem;
+  border: 2px solid #16191d;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #121517;
 }

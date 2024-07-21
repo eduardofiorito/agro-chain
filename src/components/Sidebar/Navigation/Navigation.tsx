@@ -9,7 +9,7 @@ function Navigation() {
     <nav>
       <ul className="grid gap-8">
         <li className="mb-32">
-          <Link href="/dashboard" className="flex items-center">
+          <Link href="/monitoring" className="flex items-center">
             <Logo />
           </Link>
         </li>

@@ -8,7 +8,7 @@ function MobileSidebar() {
     <div className="h-40 w-40 lg:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <button className="flex h-full w-full items-center justify-center rounded-4 bg-card">
+          <button className="bg-black-300 flex h-full w-full items-center justify-center rounded-4">
             <Menu />
             <span className="sr-only">Abrir menu</span>
           </button>
