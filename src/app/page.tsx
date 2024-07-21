@@ -1,5 +1,7 @@
 import HeaderOnePage from "@/components/HeaderOnePage";
+import Logo from "@/components/Logo";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -108,17 +110,33 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-      <section className="max-w-6xl mx-auto mt-80 px-4 flex justify-center">
-        <br />
-        <p>Footer</p>
-        <br />
-      </section>
+      <footer className="bg-gray-800 text-white py-16">
+        <div className="max-w-6xl mx-auto px-4 mb-40">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <Link href="/" className="flex items-center mt-20 ml-40">
+                <Logo />
+              </Link>
+              <p>&copy; 2024 AgroChain. All rights reserved.</p>
+            </div>
+            <div className="flex space-x-4 mb-4 md:mb-0">
+              <a href="#" className="text-white hover:text-primary-500">Home</a>
+              <a href="#" className="text-white hover:text-primary-500">Sobre</a>
+              <a href="#" className="text-white hover:text-primary-500">Solução e Tecnologia</a>
+              <a href="#" className="text-white hover:text-primary-500">Benefícios</a>
+              <a href="#" className="text-white hover:text-primary-500">Selos de Qualidade</a>
+            </div>
+            <div className="flex space-x-4">
+              <a href="#" className="text-white hover:text-primary-500">Facebook</a>
+              <a href="#" className="text-white hover:text-primary-500">Twitter</a>
+              <a href="#" className="text-white hover:text-primary-500">LinkedIn</a>
+            </div>
+          </div>
+          <div className="text-center mt-4">
+            <p>Contato: info@agrochain.fake</p>
+          </div>
+        </div>
+      </footer>
     </main>
   )
 }
