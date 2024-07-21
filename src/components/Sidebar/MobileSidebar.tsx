@@ -1,4 +1,9 @@
-import { Sheet, SheetTrigger, SheetContent } from '@/components/Sheet'
+import {
+  Sheet,
+  SheetTrigger,
+  SheetContent,
+  SheetOverlay,
+} from '@/components/Sheet'
 
 import { Menu } from 'lucide-react'
 import Navigation from './Navigation'
@@ -8,11 +13,12 @@ function MobileSidebar() {
     <div className="h-40 w-40 lg:hidden">
       <Sheet>
         <SheetTrigger asChild>
-          <button className="bg-black-300 flex h-full w-full items-center justify-center rounded-4">
+          <button className="flex h-full w-full items-center justify-center rounded-4 bg-black-300">
             <Menu />
             <span className="sr-only">Abrir menu</span>
           </button>
         </SheetTrigger>
+        <SheetOverlay className="teste-verlay" />
 
         <SheetContent>
           <Navigation />

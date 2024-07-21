@@ -37,7 +37,7 @@ function TraceabilityTimeline({ data }: DynamicTimelineProps) {
                 )}
               </TimelineSeparator>
               <TimelineContent>
-                <p className="text-sm text-neutral-500">
+                <p className="text-base text-neutral-400">
                   {`${record.name} - ${formatDate(record.timestamp)} às ${formatTime(record.timestamp)}h`}
                 </p>
                 <ul>

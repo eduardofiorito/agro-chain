@@ -15,7 +15,7 @@ export const SheetOverlay = React.forwardRef<
   React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
 >(({ className, ...props }, ref) => (
   <SheetPrimitive.Overlay
-    className={mergeClasses('fixed inset-0 z-50 bg-black/70', className)}
+    className={mergeClasses('fixed inset-0 bg-black-100/80', className)}
     {...props}
     ref={ref}
   />
@@ -45,7 +45,7 @@ export const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="focus:ring-ring bg-black-300 absolute right-16 top-16 flex h-40 w-40 items-center justify-center rounded-4 opacity-70 ring-offset-black-100 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
+      <SheetPrimitive.Close className="focus:ring-ring absolute right-16 top-16 flex h-40 w-40 items-center justify-center rounded-4 bg-black-300 opacity-70 ring-offset-black-100 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none">
         <X className="h-24 w-24" aria-hidden />
         <span className="sr-only">Fechar</span>
       </SheetPrimitive.Close>

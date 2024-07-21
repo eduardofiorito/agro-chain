@@ -1,9 +1,11 @@
 export type Certification = {
   name: string
-  dateAwarded: number
+  dateAwarded: number | null
+  progress: number
+  status: 'success' | 'in-progress' | 'failed'
   factors: {
     description: string
-    impact: 'high' | 'medium' | 'low'
+    achieved: 'success' | 'in-progress' | 'failed'
   }[]
 }
 

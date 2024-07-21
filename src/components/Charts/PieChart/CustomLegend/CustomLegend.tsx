@@ -4,7 +4,7 @@ import { LegendProps } from 'recharts'
 function CustomLegend({ payload }: LegendProps) {
   if (payload && payload.length) {
     return (
-      <div className="mt-24 flex flex-wrap justify-center gap-8">
+      <div className="mt-24 flex flex-wrap gap-8 xl:justify-center">
         {payload.map((item, index) => (
           <div className="flex items-center gap-8" key={index}>
             <Square color={item.color} fill={item.color} width={16} />
