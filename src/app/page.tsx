@@ -60,6 +60,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="max-w-6xl mx-auto mt-32 px-4 text-center">
+        <h2 className="text-4xl font-bold text-primary-500 mb-80 mt-80">Faça o teste agora mesmo</h2>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-16">
+          <div className="md:w-1/2 flex justify-center">
+            <Image src="/certification_agrochain.svg" alt="Certificação AgroChain" width={300} height={300} />
+          </div>
+          <div className="md:w-1/2 text-lg text-neutral-600 space-y-4 text-justify">
+            <p>Escaneie o QR code ao lado para acessar a página de Certificações e Sustentabilidade.</p>
+            <p>Esse QR code será anexado na embalagem do produto.</p>
+            <p>Além disso, você poderá ver a página que o produtor usa para consultar os dados, os selos adquiridos e os requisitos para obter novos selos.</p>
+          </div>
+        </div>
+      </section>
+
       <section className="max-w-6xl mx-auto mt-80 px-4 text-center">
         <h2 className="text-4xl font-bold text-primary-500 mb-16">Selos de Qualidade</h2>
         <div className="flex flex-col md:flex-row items-center justify-between gap-16 mt-32">
