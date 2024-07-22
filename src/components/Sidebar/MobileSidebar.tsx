@@ -18,7 +18,7 @@ function MobileSidebar() {
             <span className="sr-only">Abrir menu</span>
           </button>
         </SheetTrigger>
-        <SheetOverlay className="teste-verlay" />
+        <SheetOverlay />
 
         <SheetContent>
           <Navigation />

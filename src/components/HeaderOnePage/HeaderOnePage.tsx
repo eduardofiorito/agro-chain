@@ -1,24 +1,51 @@
-import React from 'react';
-import Link from 'next/link';
-import Logo from '../Logo';
+import React from 'react'
+import Link from 'next/link'
+import Logo from '../Logo'
+
+import Popover from '../Popover'
+
+export const NAV_ITEMS = [
+  { href: '#about', label: 'Sobre' },
+
+  { href: '#benefits', label: 'Benefícios' },
+  { href: '#stamps', label: 'Selos' },
+]
 
 function HeaderOnePage() {
-    return (
-        <header className="flex justify-between items-center p-4 bg-background text-neutral-50">
-            <Link href="/" className="flex items-center mt-20 ml-40">
-                <Logo />
-            </Link>
-            <nav className="mt-2 mr-40">
-                <ul className="flex gap-10">
-                    <li className="cursor-pointer text-primary-500 hover:text-primary-300">Home</li>
-                    <li className="cursor-pointer text-primary-500 hover:text-primary-300">Sobre</li>
-                    <li className="cursor-pointer text-primary-500 hover:text-primary-300">Solução e tecnologia</li>
-                    <li className="cursor-pointer text-primary-500 hover:text-primary-300">Benefícios</li>
-                    <li className="cursor-pointer text-primary-500 hover:text-primary-300">Selos de qualidade</li>
-                </ul>
-            </nav>
-        </header>
-    );
+  return (
+    <header className="sticky top-0 bg-black-300 p-8">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between md:flex-row">
+        <Link href="/" className="flex items-center">
+          <Logo />
+        </Link>
+        <nav>
+          <ul className="flex flex-wrap gap-12">
+            <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
+              <Link href="#about" className="px-4 text-sm uppercase">
+                Sobre
+              </Link>
+            </li>
+
+            <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
+              <Popover />
+            </li>
+
+            <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
+              <Link href="#stamps" className="px-4 text-sm uppercase">
+                Selos
+              </Link>
+            </li>
+
+            <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
+              <Link href="#benefits" className="px-4 text-sm uppercase">
+                Benefícios
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  )
 }
 
-export default HeaderOnePage;
+export default HeaderOnePage

@@ -13,10 +13,7 @@ function Navigation() {
     <nav>
       <ul className="grid gap-16">
         <li className="mb-32">
-          <Link
-            href="/certifications-and-sustainability"
-            className="flex items-center"
-          >
+          <Link href="/" className="flex items-center">
             <Logo />
           </Link>
         </li>
