@@ -3,10 +3,13 @@ import HeaderOnePage from '@/components/HeaderOnePage'
 import Logo from '@/components/Logo'
 import { theme } from '@/theme/tailwindTheme'
 import {
+  CheckCircle,
+  Database,
+  Eye,
   Facebook,
-  FacebookIcon,
-  Heart,
   LinkedinIcon,
+  QrCode,
+  Radio,
   Target,
   Twitter,
 } from 'lucide-react'
@@ -17,7 +20,7 @@ export default function Home() {
   return (
     <main className="scroll-smooth">
       <HeaderOnePage />
-      <section className="mx-auto flex max-w-7xl flex-col items-center justify-between px-16 py-24 md:flex-row md:py-48 lg:py-80">
+      <section className="mx-auto flex max-w-7xl flex-col items-center justify-between bg-black-100 px-16 py-24 md:flex-row md:py-48 lg:py-72">
         <div className="flex-1">
           <h1 className="text-center text-3xl font-bold text-primary-500 md:text-left md:text-4xl lg:text-5xl">
             Transparência e Sustentabilidade no Agronegócio
@@ -37,11 +40,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* about */}
-      <section className="mx-auto bg-black-300 p-16 text-center md:py-48 lg:scroll-py-80">
+      <section className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80">
         <div className="mx-auto max-w-6xl">
           <h2
-            className="mb-16 text-2xl font-semibold text-primary-500 md:mb-24 md:text-3xl lg:text-4xl"
+            className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl"
             id="about"
           >
             Sobre
@@ -69,7 +71,7 @@ export default function Home() {
             </div>
             <div className="flex-1">
               <div className="flex items-center justify-center gap-8 md:justify-start">
-                <Heart color={theme.colors.primary[500]} />
+                <Eye color={theme.colors.primary[500]} />
                 <h3 className="text-xl font-bold text-primary-500">Visão</h3>
               </div>
               <p className="mt-12 text-center text-base text-neutral-400 md:text-left md:text-lg">
@@ -83,14 +85,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* solution */}
-      <section className="mx-auto bg-black-100 p-16 text-center md:py-48 lg:scroll-py-80">
+      <section className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80">
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-24 md:text-3xl lg:text-4xl">
+          <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl">
             Solução
           </h2>
           <div className="grid grid-cols-1 gap-24 md:grid-cols-2">
             <Card className="flex min-h-[200px] flex-col items-center justify-center rounded-lg border p-8">
+              <div className="mb-12 flex h-9 w-9 items-center justify-center rounded-full bg-primary-500">
+                <Radio color={theme.colors.black[300]} />
+              </div>
               <h3 className="md:font-2xl mb-4 text-xl font-semibold text-primary-500">
                 1. Integração de Sensores
               </h3>
@@ -99,6 +103,9 @@ export default function Home() {
               </p>
             </Card>
             <Card className="flex min-h-[200px] flex-col items-center justify-center rounded-lg border p-8">
+              <div className="mb-12 flex h-9 w-9 items-center justify-center rounded-full bg-primary-500">
+                <Database color={theme.colors.black[300]} />
+              </div>
               <h3 className="md:font-2xl mb-4 text-xl font-semibold text-primary-500">
                 2. Captura de Dados
               </h3>
@@ -108,6 +115,9 @@ export default function Home() {
               </p>
             </Card>
             <Card className="flex min-h-[200px] flex-col items-center justify-center rounded-lg border p-8">
+              <div className="mb-12 flex h-9 w-9 items-center justify-center rounded-full bg-primary-500">
+                <CheckCircle color={theme.colors.black[300]} />
+              </div>
               <h3 className="md:font-2xl mb-4 text-xl font-semibold text-primary-500">
                 3. Monitoramento e Certificação
               </h3>
@@ -116,6 +126,9 @@ export default function Home() {
               </p>
             </Card>
             <Card className="flex min-h-[200px] flex-col items-center justify-center rounded-lg border p-8">
+              <div className="mb-12 flex h-9 w-9 items-center justify-center rounded-full bg-primary-500">
+                <QrCode color={theme.colors.black[300]} />
+              </div>
               <h3 className="md:font-2xl mb-4 text-xl font-semibold text-primary-500">
                 4. QR Code para Consumidores
               </h3>
@@ -128,8 +141,25 @@ export default function Home() {
         </div>
       </section>
 
-      {/* test */}
-      <section className="mx-auto bg-black-300 p-16 text-center md:py-48 lg:scroll-py-80">
+      <section className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl">
+            Vídeo Demonstrativo
+          </h2>
+          <div className="grid grid-cols-1 gap-24 md:grid-cols-2"></div>
+          <div className="mt-24 md:mt-32">
+            <video
+              src="https://res.cloudinary.com/dtz06cfki/video/upload/v1721651409/v%C3%ADdeo_ftyhht.mp4"
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+              loop
+              autoPlay
+              muted
+            />
+          </div>{' '}
+        </div>
+      </section>
+
+      <section className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col-reverse items-center justify-between gap-16 md:flex-row">
             <div className="flex justify-center md:w-1/2">
@@ -138,10 +168,11 @@ export default function Home() {
                 alt="Certificação AgroChain"
                 width={300}
                 height={300}
+                className="w-full max-w-[250px] lg:max-w-[300px]"
               />
             </div>
             <div className="space-y-4 text-justify text-lg text-neutral-600 md:w-1/2">
-              <h2 className="md:text:left mb-16 text-center text-2xl font-semibold text-primary-500 md:mb-24 md:text-3xl lg:text-4xl">
+              <h2 className="mb-16 text-center text-2xl font-semibold text-primary-500 md:mb-24 md:text-left md:text-3xl lg:text-4xl">
                 Faça o teste agora mesmo
               </h2>
               <p className="text-center text-base text-neutral-400 md:text-left md:text-lg">
@@ -161,9 +192,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* stamps */}
       <section
-        className="mx-auto bg-black-100 p-16 text-center md:py-48 lg:scroll-py-80"
+        className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80"
         id="stamps"
       >
         <div className="mx-auto max-w-6xl">
@@ -193,13 +223,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* benefits */}
       <section
-        className="mx-auto bg-black-300 p-16 text-center md:py-48 lg:scroll-py-80"
+        className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80"
         id="benefits"
       >
         <div className="mx-auto max-w-6xl">
-          <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-24 md:text-3xl lg:text-4xl">
+          <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl">
             Benefícios
           </h2>
           <div className="mb-32 mt-32 flex flex-col items-center justify-between gap-16 md:flex-row">

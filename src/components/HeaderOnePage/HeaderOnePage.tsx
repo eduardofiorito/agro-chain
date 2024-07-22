@@ -19,9 +19,9 @@ function HeaderOnePage() {
           <Logo />
         </Link>
         <nav>
-          <ul className="flex flex-wrap gap-12">
+          <ul className="flex gap-4 md:gap-12">
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
-              <Link href="#about" className="px-4 text-sm uppercase">
+              <Link href="#about" className="text-sm uppercase md:px-4">
                 Sobre
               </Link>
             </li>
@@ -31,13 +31,13 @@ function HeaderOnePage() {
             </li>
 
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
-              <Link href="#stamps" className="px-4 text-sm uppercase">
+              <Link href="#stamps" className="text-sm uppercase md:px-4">
                 Selos
               </Link>
             </li>
 
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
-              <Link href="#benefits" className="px-4 text-sm uppercase">
+              <Link href="#benefits" className="text-sm uppercase md:px-4">
                 Benefícios
               </Link>
             </li>

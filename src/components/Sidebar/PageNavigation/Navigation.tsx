@@ -1,9 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Logo from '@/components/Logo'
-import clsx from 'clsx'
-import { BarChart4, PieChart } from 'lucide-react'
 
 function Navigation() {
   return (

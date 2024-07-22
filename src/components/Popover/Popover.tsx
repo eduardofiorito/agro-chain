@@ -26,22 +26,23 @@ function PopoverMenu() {
           <div className="grid grid-cols-2 gap-4">
             <Card>
               <Link
+                href="/certifications-and-sustainability"
+                className="flex h-full flex-col items-center justify-center gap-8 p-16 text-neutral-100 hover:bg-black-600"
+              >
+                <BadgeCheck />
+                <p className="text-center">
+                  Sustentabilidade <span>Certificações</span>
+                </p>
+              </Link>
+            </Card>
+
+            <Card>
+              <Link
                 href="/monitoring"
                 className="flex h-full flex-col items-center justify-center gap-8 p-16 text-neutral-100 hover:bg-black-600"
               >
                 <BarChart4 />
                 Monitoramento
-              </Link>
-            </Card>
-            <Card>
-              <Link
-                href="/certifications-and-sustainability"
-                className="flex h-full flex-col items-center justify-center gap-8 p-16 text-neutral-100 hover:bg-black-600"
-              >
-                <BadgeCheck />
-                <p className='text-center'>
-                  Sustentabilidade  <span>Certificações</span>
-                </p>
               </Link>
             </Card>
           </div>
