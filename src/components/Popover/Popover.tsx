@@ -47,23 +47,23 @@ function PopoverMenu() {
             </Card>
 
             <Card>
-              <Link
+              <a
                 href="#solution"
                 className="flex h-full flex-col items-center justify-center gap-8 p-16 text-neutral-100 hover:bg-black-600"
               >
                 <BadgeCheck />
                 <p className="text-center">Solução</p>
-              </Link>
+              </a>
             </Card>
 
             <Card>
-              <Link
+              <a
                 href="#test"
                 className="flex h-full flex-col items-center justify-center gap-8 p-16 text-neutral-100 hover:bg-black-600"
               >
                 <BadgeCheck />
                 <p className="text-center">Demonstração</p>
-              </Link>
+              </a>
             </Card>
           </div>
         </Popover.Content>

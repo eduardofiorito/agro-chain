@@ -1,15 +1,7 @@
-import React from 'react'
 import Link from 'next/link'
 import Logo from '../Logo'
 
 import Popover from '../Popover'
-
-export const NAV_ITEMS = [
-  { href: '#about', label: 'Sobre' },
-
-  { href: '#benefits', label: 'Benefícios' },
-  { href: '#stamps', label: 'Selos' },
-]
 
 function HeaderOnePage() {
   return (
@@ -21,9 +13,9 @@ function HeaderOnePage() {
         <nav>
           <ul className="flex gap-4 md:gap-12">
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
-              <Link href="#about" className="text-sm uppercase md:px-4">
+              <a href="#about" className="text-sm uppercase md:px-4">
                 Sobre
-              </Link>
+              </a>
             </li>
 
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
@@ -31,15 +23,15 @@ function HeaderOnePage() {
             </li>
 
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
-              <Link href="#stamps" className="text-sm uppercase md:px-4">
+              <a href="#stamps" className="text-sm uppercase md:px-4">
                 Selos
-              </Link>
+              </a>
             </li>
 
             <li className="flex cursor-pointer items-center whitespace-nowrap px-8 text-neutral-300 hover:underline">
-              <Link href="#benefits" className="text-sm uppercase md:px-4">
+              <a href="#benefits" className="text-sm uppercase md:px-4">
                 Benefícios
-              </Link>
+              </a>
             </li>
           </ul>
         </nav>
