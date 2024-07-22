@@ -40,12 +40,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80">
+      <section
+        className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80"
+        id="about"
+      >
         <div className="mx-auto max-w-6xl">
-          <h2
-            className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl"
-            id="about"
-          >
+          <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl">
             Sobre
           </h2>
           <p className="mb-24 text-base text-neutral-400 md:text-lg">
@@ -85,7 +85,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80">
+      <section
+        className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80"
+        id="solution"
+      >
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl">
             Solução
@@ -141,7 +144,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80">
+      <section
+        className="mx-auto bg-black-300 p-24 text-center md:py-48 lg:py-80"
+        id="demonstration"
+      >
         <div className="mx-auto max-w-6xl">
           <h2 className="mb-16 text-2xl font-semibold text-primary-500 md:mb-32 md:text-3xl lg:text-4xl">
             Vídeo Demonstrativo
@@ -159,7 +165,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80">
+      <section
+        className="mx-auto bg-black-100 p-24 text-center md:py-48 lg:py-80"
+        id="test"
+      >
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col-reverse items-center justify-between gap-16 md:flex-row">
             <div className="flex justify-center md:w-1/2">
@@ -245,11 +254,11 @@ export default function Home() {
                 Clientes
               </h3>
               <ul className="list-inside list-disc text-lg text-neutral-600">
-                <li className="text-center text-base text-neutral-400 md:text-left md:text-lg">
+                <li className="text-base text-neutral-400 md:text-lg">
                   Acesso a informações transparentes sobre a procedência dos
                   alimentos.
                 </li>
-                <li className="text-center text-base text-neutral-400 md:text-left md:text-lg">
+                <li className="text-base text-neutral-400 md:text-lg">
                   Escolha alimentos que correspondem ao seu estilo de vida e
                   valores.
                 </li>
@@ -262,11 +271,11 @@ export default function Home() {
                 Produtores
               </h3>
               <ul className="list-inside list-disc text-lg text-neutral-600">
-                <li className="text-center text-base text-neutral-400 md:text-left md:text-lg">
+                <li className="text-base text-neutral-400 md:text-lg">
                   Reconhecimento e valorização monetária por práticas
                   sustentáveis.
                 </li>
-                <li className="text-center text-base text-neutral-400 md:text-left md:text-lg">
+                <li className="text-base text-neutral-400 md:text-lg">
                   Facilidade em obter financiamentos e investimentos com dados
                   comprovados.
                 </li>
@@ -295,11 +304,11 @@ export default function Home() {
                 Sociedade
               </h3>
               <ul className="list-inside list-disc text-lg text-neutral-600">
-                <li className="text-center text-base text-neutral-400 md:text-left md:text-lg">
+                <li className="text-base text-neutral-400 md:text-lg">
                   Contribuição para a redução dos impactos das mudanças
                   climáticas.
                 </li>
-                <li className="text-center text-base text-neutral-400 md:text-left md:text-lg">
+                <li className="text-base text-neutral-400 md:text-lg">
                   Fortalecimento da responsabilidade e união entre consumidores
                   e produtores.
                 </li>
