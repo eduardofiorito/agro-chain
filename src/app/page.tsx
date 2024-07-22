@@ -2,7 +2,14 @@ import Card from '@/components/Card'
 import HeaderOnePage from '@/components/HeaderOnePage'
 import Logo from '@/components/Logo'
 import { theme } from '@/theme/tailwindTheme'
-import { Facebook, FacebookIcon, Heart, LinkedinIcon, Target, Twitter } from 'lucide-react'
+import {
+  Facebook,
+  FacebookIcon,
+  Heart,
+  LinkedinIcon,
+  Target,
+  Twitter,
+} from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -124,7 +131,7 @@ export default function Home() {
       {/* test */}
       <section className="mx-auto bg-black-300 p-16 text-center md:py-48 lg:scroll-py-80">
         <div className="mx-auto max-w-6xl">
-          <div className="flex flex-col-reverse items-center justify-between gap-16 md:flex-row md:flex-col">
+          <div className="flex flex-col-reverse items-center justify-between gap-16 md:flex-row">
             <div className="flex justify-center md:w-1/2">
               <Image
                 src="/certification_agrochain.svg"
@@ -155,7 +162,10 @@ export default function Home() {
       </section>
 
       {/* stamps */}
-      <section className="mx-auto bg-black-100 p-16 text-center md:py-48 lg:scroll-py-80">
+      <section
+        className="mx-auto bg-black-100 p-16 text-center md:py-48 lg:scroll-py-80"
+        id="stamps"
+      >
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col items-center justify-between gap-16 md:flex-row">
             <div className="space-y-4 text-justify text-lg text-neutral-600 md:w-1/2">
@@ -281,7 +291,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex justify-center gap-16 mb-12">
+          <div className="mb-12 flex justify-center gap-16">
             <a href="#" className="text-white hover:text-primary-500">
               <Facebook />
             </a>
